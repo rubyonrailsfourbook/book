@@ -1,4 +1,5 @@
 # Static Content
+
 ## Static Content
 Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.
 ## Complete Static Pages
