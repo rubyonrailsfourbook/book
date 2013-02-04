@@ -1,0 +1,2 @@
+## Checking comments for Spam
+Fighting spam is important for keep a good blog. In this section we talk about keeping your blog spam free. We will be using a service called [Akismet](http://akismet.com/). To make life easy we will be using a gem called `rakismet`.    
