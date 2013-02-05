@@ -29,5 +29,5 @@
 10-posts-comments/01-comment-model.markdown
 10-posts-comments/02-comment-validations.markdown
 10-posts-comments/03-comment-association.markdown
-10-posts-comments/04-comment-repies.markdown
+10-posts-comments/04-comment-replies.markdown
 10-posts-comments/05-check-comments-for-spam.markdown
