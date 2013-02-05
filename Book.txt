@@ -22,7 +22,7 @@
 07-sign-in-and-out/01-authorization.markdown
 07-sign-in-and-out/02-sessions.markdown
 08-posts-part1/01-post-model.markdown
-08-posts-part1/01-post-views.markdown
+08-posts-part1/02-post-views.markdown
 09-posts-part2/01-post-restrictions.markdown
 09-posts-part2/02-post-scheduling.markdown
 09-posts-part2/03-post-formatting.markdown
