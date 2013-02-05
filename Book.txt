@@ -12,6 +12,7 @@
 04-creating-the-layout/02-asset-pipleline.markdown
 04-creating-the-layout/03-scss.markdown
 04-creating-the-layout/04-links.markdown
+05-user-model/01-user-model-overview.markdown
 05-user-model/02-user-model-validtions.markdown
 05-user-model/03-user-password.markdown
 06-user-sign-up/01-user-show-page.markdown
