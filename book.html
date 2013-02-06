@@ -1,0 +1,95 @@
+<h1 id="from-nothing-to-running"><a href="#TOC">From Nothing to Running</a></h1>
+<h2 id="intro"><a href="#TOC">Intro</a></h2>
+<h2 id="setting-up-a-development-environment"><a href="#TOC">Setting up a Development Environment</a></h2>
+<h2 id="using-git"><a href="#TOC">Using Git</a></h2>
+<h2 id="deploying-to-heroku"><a href="#TOC">Deploying to Heroku</a></h2>
+<h1 id="the-famous-fifteen-minute-blog"><a href="#TOC">The Famous Fifteen Minute Blog</a></h1>
+<h2 id="the-post-model"><a href="#TOC">The Post Model</a></h2>
+<h2 id="comments"><a href="#TOC">Comments</a></h2>
+<h2 id="conclusion"><a href="#TOC">Conclusion</a></h2>
+<h1 id="static-content"><a href="#TOC">Static Content</a></h1>
+<h2 id="static-content-1"><a href="#TOC">Static Content</a></h2>
+<p>Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.</p>
+<h2 id="complete-static-pages"><a href="#TOC">Complete Static Pages</a></h2>
+<h3 id="how-to-create-complete-static-pages"><a href="#TOC">How to Create Complete Static Pages</a></h3>
+<p>These pages are static. The are not changed in any way by rails. Pages like this can be place in <code>public</code> folder. For example you can place this code in a file in the <code>public</code> in file called <code>sample_page.html</code>.</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sample Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a truly static page&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt; </code></pre>
+<h3 id="issues"><a href="#TOC">Issues</a></h3>
+<p>This is a very simple HTML page and simple todo. However this is not a good solution. There are a few issues with this approach.</p>
+<h4 id="the-layout"><a href="#TOC">The Layout</a></h4>
+<p>The layout of the site, which we will talk out in the next chapter, will not be appiled to these types of pages. They must be given there own style. This can be great. But, if the goal of these pages is contact and about this might not be the best approach.</p>
+<h4 id="the-location"><a href="#TOC">The Location</a></h4>
+<p>Since the advent of the asset pipeline, talked about later in this book, putting files in <code>public</code> is sort seems a bit wrong. This a public for error pages and that is about it. That is the attuide given the rails community.</p>
+<h2 id="writing-tests"><a href="#TOC">Writing Tests</a></h2>
+<h3 id="why-test"><a href="#TOC">Why Test?</a></h3>
+<h3 id="how-to-test"><a href="#TOC">How to Test?</a></h3>
+<h4 id="red"><a href="#TOC">Red</a></h4>
+<h4 id="green"><a href="#TOC">Green</a></h4>
+<h1 id="creating-the-layout"><a href="#TOC">Creating the Layout</a></h1>
+<h2 id="structure"><a href="#TOC">Structure</a></h2>
+<h2 id="asset-pipeline"><a href="#TOC">Asset Pipeline</a></h2>
+<h2 id="scss"><a href="#TOC">SCSS</a></h2>
+<h2 id="links"><a href="#TOC">Links</a></h2>
+<h1 id="user-model"><a href="#TOC">User Model</a></h1>
+<h2 id="overview"><a href="#TOC">Overview</a></h2>
+<h2 id="validations"><a href="#TOC">Validations</a></h2>
+<h2 id="passwords"><a href="#TOC">Passwords</a></h2>
+<h1 id="user-sign-up"><a href="#TOC">User Sign Up</a></h1>
+<h2 id="user-show-page"><a href="#TOC">User Show Page</a></h2>
+<h2 id="sign-up-form"><a href="#TOC">Sign Up Form</a></h2>
+<h2 id="sign-up-failire"><a href="#TOC">Sign Up Failire</a></h2>
+<h2 id="sign-up-success"><a href="#TOC">Sign Up Success</a></h2>
+<h1 id="posts-part-1"><a href="#TOC">Posts Part 1</a></h1>
+<h2 id="post-model"><a href="#TOC">Post Model</a></h2>
+<h1 id="post-views"><a href="#TOC">Post Views</a></h1>
+<h2 id="post-show-page"><a href="#TOC">Post Show Page</a></h2>
+<h2 id="post-listing-page"><a href="#TOC">Post Listing Page</a></h2>
+<h2 id="post-blog-page"><a href="#TOC">Post Blog Page</a></h2>
+<h1 id="post-part-2"><a href="#TOC">Post Part 2</a></h1>
+<h2 id="post-restrictions"><a href="#TOC">Post Restrictions</a></h2>
+<h2 id="post-scheduling"><a href="#TOC">Post Scheduling</a></h2>
+<h2 id="post-formatting"><a href="#TOC">Post Formatting</a></h2>
+<h1 id="post-comments"><a href="#TOC">Post Comments</a></h1>
+<h2 id="comment-model"><a href="#TOC">Comment Model</a></h2>
+<h2 id="comment-validations"><a href="#TOC">Comment Validations</a></h2>
+<h2 id="comment-association"><a href="#TOC">Comment Association</a></h2>
+<h2 id="comment-replies"><a href="#TOC">Comment Replies</a></h2>
+<h2 id="checking-comments-for-spam"><a href="#TOC">Checking comments for Spam</a></h2>
+<p>Fighting spam is important for keep a good blog. In this section we talk about keeping your blog spam free. We will be using a service called <a href="http://akismet.com/">Akismet</a>. To make life easy we will be using a gem called <code>rakismet</code>.</p>
+<h3 id="ways-to-stop-spam"><a href="#TOC">Ways to Stop Spam</a></h3>
+<p>There are several ways to stop spam. Some a user friendly. The user can't even tell the difference if the spam filter is on or off. Some require serious user interaction. They may require finding are code in a mess of letter or hear a code out a busy sounding clip.</p>
+<h4 id="user-friendly"><a href="#TOC">User Friendly</a></h4>
+<p>User friend filters use some sort of computer algorithms and/or artificial intelligence. These service take in information like comment text, the comment author email, IP, user agent, and email and other factors. There are good services out there that have taken the hard work out for us. We can just submit our infomation and await a quick reply if it's spam or not. A service the is world renouned for it's great detection rate is <a href="http://akismet.com/">Akismet</a>. It's created by the fine folks at <a href="http://automattic.com/">Automattic</a>. These are the people behind the one the largest blogging platforms on the face of the earth, <a href="http://wordpress.org">wordpress</a>.</p>
+<h4 id="user-unfriendly"><a href="#TOC">User Unfriendly</a></h4>
+<p>These method require the user the to do more work than they &quot;need&quot; to in order to post their comment. These methods can very in range in time required to finish the &quot;puzzle&quot; and complexity. There is an act of balance that must be played when using these types of spam prevention. The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition software can't read it so. The follow are some ways to test if a user is real.</p>
+<h5 id="simple-question"><a href="#TOC">Simple Question</a></h5>
+<p>The simple question method</p>
+<h2 id="checking-comments-for-spam-1"><a href="#TOC">Checking comments for Spam</a></h2>
+<p>Fighting spam is important for keep a good blog. In this section we talk about keeping your blog spam free. We will be using a service called <a href="http://akismet.com/">Akismet</a>. To make life easy we will be using a gem called <code>rakismet</code>.</p>
+<h3 id="ways-to-stop-spam-1"><a href="#TOC">Ways to Stop Spam</a></h3>
+<p>There are several ways to stop spam. Some a user friendly. The user can't even tell the difference if the spam filter is on or off. Some require serious user interaction. They may require finding are code in a mess of letter or hear a code out a busy sounding clip.</p>
+<h4 id="user-friendly-1"><a href="#TOC">User Friendly</a></h4>
+<h5 id="spam-filter"><a href="#TOC">Spam Filter</a></h5>
+<p>User friend filters use some sort of computer algorithms and/or artificial intelligence. These service take in information like comment text, the comment author email, IP, user agent, and email and other factors. There are good services out there that have taken the hard work out for us. We can just submit our infomation and await a quick reply if it's spam or not. A service the is world renouned for it's great detection rate is <a href="http://akismet.com/">Akismet</a>. It's created by the fine folks at <a href="http://automattic.com/">Automattic</a>. These are the people behind the one the largest blogging platforms on the face of the earth, <a href="http://wordpress.org">wordpress</a>.</p>
+<h4 id="user-unfriendly-1"><a href="#TOC">User Unfriendly</a></h4>
+<p>These method require the user the to do more work than they &quot;need&quot; to in order to post their comment. These methods can very in range in time required to finish the &quot;puzzle&quot; and complexity. There is an act of balance that must be played when using these types of spam prevention.</p>
+<h5 id="recaptcha"><a href="#TOC">(Re)captcha</a></h5>
+<p>The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition software can't read it so.</p>
+<h5 id="simple-question-1"><a href="#TOC">Simple Question</a></h5>
+<p>This method requires the user to answer a &quot;simple&quot; qeustion to submit the comment. The follow are sample question are used:</p>
+<ul>
+<li>What is 2 plus 6?</li>
+<li>What is 4 plus 6</li>
+<li>What is two plus two</li>
+<li>What is the color of the sky?</li>
+<li>What is 2 times 2?</li>
+<li>What planet do you live on?</li>
+</ul>
+<p>This method sounds great since it doesn't require people to waste serveral attemps to guess extremly distorted as discussed above. How ever there are some draw backs to this approach. The first issue is that it can broken be broken by hackers.</p>
