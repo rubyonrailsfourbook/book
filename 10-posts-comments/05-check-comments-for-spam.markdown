@@ -6,7 +6,7 @@ There are several ways to stop spam. Some a user friendly. The user can't even t
 
 #### User Friendly
 
-## Spam Filter
+##### Spam Filter
 User friend filters use some sort of computer algorithms and/or artificial intelligence. These service take in information like comment text, the comment author email, IP, user agent, and email and other factors. There are good services out there that have taken the hard work out for us. We can just submit our information and await a quick reply if it's spam or not. A service the is world renowned for it's great detection rate is [Akismet](http://akismet.com/). It's created by the fine folks at [Automattic](http://automattic.com/). These are the people behind the one the largest blogging platforms on the face of the earth, [WordPress](http://wordpress.org).
 
 The downsides of using spam filers that some spam could be marked "ham". Ham is a comment that is not spam. The filter could also mark "ham" as spam was well. Comments incorrectly marked should be correctly so that filter can learn better. 
