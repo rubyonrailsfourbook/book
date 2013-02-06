@@ -4,4 +4,5 @@
 	|- Content : Text
 	|- published_on : datetime
 	|- user_id : integer 
+
 ## Post Model
