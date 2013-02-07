@@ -3,5 +3,8 @@
 ## Posts
 
 ### Model
+	Post
+	|- title : String
+	|- content : text
 
-### Views
+### Views	
