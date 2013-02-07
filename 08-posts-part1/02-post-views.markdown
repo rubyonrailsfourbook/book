@@ -12,6 +12,7 @@
 	for post in @posts do
 
 	end
+
 ### Post Blog Page
 
 	for post in @posts do
