@@ -1,5 +1,23 @@
 # Static Content
 
+## Starting Our Blog
+In this chapter we will start creating the main blog. So first we need to create the rails app.
+
+	$ rails new blog --skip-test-unit
+	$ cd blog
+
+Next we need to edit the Gemfile to make it work for our needs. Please go to
+
+TODO: Add Link To Gemfile
+
+next bundle your gems by running:
+
+	$ bundle install
+
+After installing you need to the following command to set RSpec.
+
+	$ rails g rspec:install
+
 ## Static Content
 Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.
 
@@ -26,3 +44,6 @@ But, if the goal of these pages is contact and about this might not be the best 
 
 #### The Location
 Since the advent of the asset pipeline, talked about later in this book, putting files in `public` is sort seems a bit wrong. This a public for error pages and that is about it. That is the attuide given the rails community.
+
+## Mostly Static
+The next way is a bit better.
