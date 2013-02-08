@@ -1,11 +1,18 @@
 ## Using Git
 
-### Making A Commit
-
 ### Braching
 
-### Merge 
+	git checkout -b [new_branch_name]
+	git branch [new_branch_new]
+
+### Merge
+
+	git merge [branch]
 
 ### Pushing 
 
+	git push [remote] [branch]
+	
 ### Pulling
+
+	git pull [source] [branch]

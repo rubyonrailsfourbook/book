@@ -18,6 +18,12 @@ After installing you need to the following command to set RSpec.
 
 	$ rails g rspec:install
 
+After creating the application next we are going to create a git repoository and commit.
+
+	$ git init
+	$ git add .
+	$ git commit -m "First Commit"	
+
 ## Static Content
 Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.
 
