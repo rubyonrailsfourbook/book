@@ -51,4 +51,4 @@ and answers. Having this a hacking can just render useless for spam
 prevention.
 
 ### Choosing Our Spam Prevention
-With all things we don't have choose just one. We can choose a couple.
+With all things we don't have choose just one. We can choose a couple. First we want a nice user experince so the user unfriendly options. We will choose a spam filter.

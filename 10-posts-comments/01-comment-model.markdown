@@ -3,6 +3,8 @@
 	Comments
 	|- content : string
 	|- user_id : integer
-	|- post_Id : integer
+	|- post_id : integer
+	|- user_remote_ip : string
+	|- user_agent : string
 
 ## Comment Model

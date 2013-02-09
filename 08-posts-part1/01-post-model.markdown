@@ -1,7 +1,7 @@
 # Posts Part 1
 	Posts
-	|- name : String
-	|- content : Text
+	|- name : string
+	|- content : text
 	|- published_on : datetime
 	|- user_id : integer 
 

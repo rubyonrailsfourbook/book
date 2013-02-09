@@ -12,7 +12,9 @@
 ### Pushing 
 
 	git push [remote] [branch]
+	git push origin master
 	
 ### Pulling
 
-	git pull [source] [branch]
+	git push [source] [branch]
+	git push origin master
