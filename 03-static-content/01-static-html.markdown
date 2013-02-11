@@ -52,4 +52,4 @@ But, if the goal of these pages is contact and about this might not be the best 
 Since the advent of the asset pipeline, talked about later in this book, putting files in `public` is sort seems a bit wrong. This a public for error pages and that is about it. That is the attuide given the rails community.
 
 ## Mostly Static
-The next way is a bit better.
+The next way is a bit better. This way allows you to keep the same layout of your site very easily. 

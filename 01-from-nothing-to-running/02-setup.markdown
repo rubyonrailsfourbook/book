@@ -2,6 +2,7 @@
 
 ### Mac OS
 
-### Windows 
+### Windows
+Ruby on Rails in Windows is
 
-### Linux  
+### Linux

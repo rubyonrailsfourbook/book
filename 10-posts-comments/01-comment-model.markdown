@@ -1,5 +1,4 @@
 # Post Comments
-
 	Comments
 	|- content : string
 	|- user_id : integer
