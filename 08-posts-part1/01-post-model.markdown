@@ -3,6 +3,14 @@
 	|- name : string
 	|- content : text
 	|- published_on : datetime
-	|- user_id : integer 
+	|- user_id : integer
+
+| Field                   | Type       |
+|-------------------------|------------|
+| name 					  | string	   |
+| content 				  | text       |
+| published_on 			  | datetime   |
+| user_id				  | integer    |
+
 
 ## Post Model
