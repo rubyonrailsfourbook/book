@@ -3,8 +3,10 @@
 ## Posts
 
 ### Model
-	Post
-	|- title : String
-	|- content : text
 
-### Views	
+| Field    | Type       |
+|----------|------------|
+| title    | string     |
+| content  | text       |
+
+### Views
