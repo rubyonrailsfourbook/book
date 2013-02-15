@@ -19,8 +19,8 @@
 		</thead>
 		<tbody>
 			<% post.each do |post| %>
-				<tr>
-					<td><%= post.title %></td>
+			  <tr>
+				<td><%= post.title %></td>
 					<td><%= post.published_at %></td>
 					<td>
 						<%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
@@ -30,9 +30,7 @@
 			<% end %>
 		</tbody>
 	</table>
-	for post in @posts do
 	
-	end
 
 ### Post Blog Page
 
