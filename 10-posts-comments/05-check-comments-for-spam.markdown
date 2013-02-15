@@ -1,5 +1,5 @@
 ## Checking Comments for Spam
-Fighting spam is important for keep a good blog and community. In this section we talk about keeping your blog spam free. We will talk about several different methods of spam prevention We will be using a service called [Akismet](http://akismet.com/). To make life easy we will be using a gem called `rakismet`.
+Fighting spam is important for keep a good blog and community. This section will talk about keeping your blog spam free, for the most part. This section will talk about several different methods of spam prevention In this tutorial will be using a service called [Akismet](http://akismet.com/). To make life easy we will be using a gem called `[rakismet](https://github.com/joshfrench/rakismet)`.
 
 ### Ways to Stop Spam
 There are several ways to stop spam. Some a user friendly. The user can't even tell the difference if the spam filter is on or off. Some require serious user interaction. They may require finding are code in a mess of letters or listen a code out a busy sounding clip.
@@ -12,11 +12,9 @@ User friendly method make so that user doesn't have to think. The spam check hap
 
 The downsides of using spam filers that some spam could be marked "ham". Ham is a comment that is not spam. The filter could also mark "ham" as spam was well. Comments incorrectly marked should be correctly so that filter can learn better.
 
-##### Check a Database of Know Spammers
-
 #### User Unfriendly
 These method require the user the to do more work than they
-�need� to in order to post their comment. These methods
+"need" to in order to post their comment. These methods
 can very in range in time required to finish the "puzzle" and
 complexity. There is an act of balance that must be played
 when using these types of spam prevention.
@@ -50,5 +48,26 @@ hackers. This can be done by creating a table of questions
 and answers. Having this a hacking can just render useless for spam
 prevention.
 
-### Choosing Our Spam Prevention
-With all things we don't have choose just one. We can choose a couple. First we want a nice user experince so the user unfriendly options. We will choose a spam filter.
+This tutorial, as stated earlier, will be using [Akismet](http://akismet.com/).
+
+### Akisment Intergation
+The gem used here is called [rakismet](https://github.com/joshfrench/rakismet). Rakisment gives a nice frontend to deal with the Akisment API. The best place for the logic for the spam check is in the comment model file. Rakisment checks attributes on the model. So some attributes need to be defined. However, first the raskisment model class must be imported. 
+
+	class Comment < ActiveRecord::Base
+		include Rakismet::Model
+
+		...
+	end
+
+Next pass the raskiment attributes.
+
+	...
+
+	 rakismet_attrs
+	 	author: proc { user.name }
+	 	author_meail: proc { user.email }
+
+	...
+
+
+

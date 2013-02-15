@@ -23,8 +23,10 @@
 				<td><%= post.title %></td>
 				<td><%= post.published_at %></td>
 				<td>
-				<%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
-				<%= link_to "Destory", post, method: :delete, class: 'btn btn-danger' %>
+				  <% if @current_user.admin?
+				  <%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
+				  <%= link_to "Destory", post, method: :delete, class: 'btn btn-danger' %>
+				end
 				</td>
 			</tr>
 		<% end %>
