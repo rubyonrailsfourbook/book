@@ -4,10 +4,10 @@
 
 ### Model
 
-| Field    | Type              |
+| Field    | Type       |
 |----------|------------|
-| title    | string              |
-| content  | text             |
+| title    | string     |
+| content  | text       |
 
 ### Views
 

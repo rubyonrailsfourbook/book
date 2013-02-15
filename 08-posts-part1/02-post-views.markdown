@@ -9,27 +9,27 @@
 ### Post Show Page
 
 ### Post Listing Page
-	<table>
-		<thead>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Published at</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% post.each do |post| %>
 			<tr>
-				<th>Title</th>
-				<th>Published at</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			<% post.each do |post| %>
-			  <tr>
 				<td><%= post.title %></td>
-					<td><%= post.published_at %></td>
-					<td>
-						<%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
-						<%= link_to "Destory", post, method: :delete, class: btn btn-danger' %>
-					</td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
+				<td><%= post.published_at %></td>
+				<td>
+				<%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
+				<%= link_to "Destory", post, method: :delete, class: 'btn btn-danger' %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
 	
 
 ### Post Blog Page
@@ -48,5 +48,6 @@ In order for the `Markdown.render` to work you need to add the follow code to a 
 		Redcarpet::Markdown.new(Redcarpet::Render::HTML,
         autolink: true, space_after_headers: true).render(text)
 	end
+	
 This code setups RedCarpet and passes in text to rendered as markdown. This follows for easy formatting.
 

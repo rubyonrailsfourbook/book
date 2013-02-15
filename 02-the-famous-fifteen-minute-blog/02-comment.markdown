@@ -2,10 +2,11 @@
 
 ## Model
 
-	Comment
-	|- name : string
-	|- content : text
-	|- user_id : string
-	|- post_id : string
+	| Field       | Type        |
+	|-------------|-------------|
+	| name        | string      |
+	| content     | text        |
+	| user_id     | integer     |
+	| post_id     | integer     |
 	
 ## Forms

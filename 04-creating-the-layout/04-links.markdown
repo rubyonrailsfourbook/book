@@ -1,1 +1,3 @@
 ## Links
+	
+	<%= link_to "Home", root_url %>

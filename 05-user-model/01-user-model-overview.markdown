@@ -1,12 +1,5 @@
 # User Model
 
-	User
-	|- name : string
-	|- email : string
-	|- password_digest : string
-	|- admin : boolean
-
-
 |Field  			| Type     |
 |-------------------|----------|
 | name  			| string   |
