@@ -12,12 +12,12 @@ User friendly method make so that user doesn't have to think. The spam check hap
 
 The downsides of using spam filers that some spam could be marked "ham". Ham is a comment that is not spam. The filter could also mark "ham" as spam was well. Comments incorrectly marked should be correctly so that filter can learn better.
 
-##### Check a Database of Know Spamemrs
+##### Check a Database of Know Spammers
 
 #### User Unfriendly
 These method require the user the to do more work than they
-“need” to in order to post their comment. These methods
-can very in range in time required to finish the “puzzle” and
+ÔøΩneedÔøΩ to in order to post their comment. These methods
+can very in range in time required to finish the "puzzle" and
 complexity. There is an act of balance that must be played
 when using these types of spam prevention.
 
@@ -26,12 +26,12 @@ This method involves using and
 distorting text and having the using decode it. The key is
 make simple enough to make sure that your grandma can do
 it with bad eye sight and make hard enough so that OCR,
-optical character recognition, software can’t read so. Captchas
+optical character recognition, software can't read so. Captchas
 normally error on the side of preventing spam which make them harder to solve. This will cause problems with usability. The good part of this method is that 
 
 ##### Simple Question
 This method requires the user
-to answer a “simple” question to submit the comment. The
+to answer a "simple" question to submit the comment. The
 follow are sample question are used:
 
 * What is 2 plus 6?
@@ -42,7 +42,7 @@ follow are sample question are used:
 * What planet do you live on?
 * What color is grass?
 
-This method sounds great since it doesn’t require people
+This method sounds great since it doesn't require people
 to waste several attempts to guess extremely distorted as
 discussed above. How ever there are some draw backs to this
 approach. The first issue is that it can broken be broken by
