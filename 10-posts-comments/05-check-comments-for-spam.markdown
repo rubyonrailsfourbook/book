@@ -22,6 +22,10 @@ when using these types of spam prevention.
 ##### (Re)captcha
 This method involves using and  distorting text and having the using decode it. The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition, software can't read so. Captchas normally error on the side of preventing spam which make them harder to solve. This will cause problems with usability. The good part of this method is that 
 
+D> ## Captchas are Debatable
+D>
+D> Captchas are good at fighting spam. So good in fact the some people find them unsolvable.
+
 ##### Simple Question
 This method requires the user to answer a "simple" question to submit the comment. The following are sample question that could be used:
 
@@ -54,6 +58,5 @@ Next pass the raskimet attributes.
 	 	author_meail: proc { user.email }
 
 	...
-
 
 
