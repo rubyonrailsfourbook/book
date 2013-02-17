@@ -4,7 +4,7 @@
 |-------------------|----------|
 | name  			| string   |
 | email 			| string   |
-| url                    | string   |
+| url               | string   |
 | password_digest	| string   |
 | admin 			| boolean  |
 
