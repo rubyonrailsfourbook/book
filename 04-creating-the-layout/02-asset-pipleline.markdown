@@ -1,2 +1,2 @@
 ## Asset Pipeline
-The asset pipeline is a feature of rails that helps make your javascript and stylesheets better.
+The asset pipeline is a feature of rails that helps make your javascript and stylesheets better. The images, stylesheets, and javascript files going `app/assets` and into their respective directories.

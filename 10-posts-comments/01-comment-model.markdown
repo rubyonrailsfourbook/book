@@ -6,7 +6,7 @@
 | user_id 				  | integer    |
 | post_id	 			  | integer	   |
 | user_remote_ip		  | string     |
-| user_agent			  | string     |s
+| user_agent			  | string     |
 
 
 ## Comment Model
