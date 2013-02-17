@@ -13,11 +13,7 @@ User friendly method make so that user doesn't have to think. The spam check hap
 The downsides of using spam filers that some spam could be marked "ham". Ham is a comment that is not spam. The filter could also mark "ham" as spam was well. Comments incorrectly marked should be correctly so that filter can learn better.
 
 #### User Unfriendly
-These method require the user the to do more work than they
-"need" to in order to post their comment. These methods
-can very in range in time required to finish the "puzzle" and
-complexity. There is an act of balance that must be played
-when using these types of spam prevention.
+These method require the user the to do more work than they "need" to in order to post their comment. These methods can very in range in time required to finish the "puzzle" and complexity. There is an act of balance that must be played when using these types of spam prevention.
 
 ##### (Re)captcha
 This method involves using and  distorting text and having the using decode it. The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition, software can't read so. Captchas normally error on the side of preventing spam which make them harder to solve. This will cause problems with usability. The good part of this method is that 
@@ -42,20 +38,23 @@ This method sounds great since it doesn't require people to waste several attemp
 This tutorial, as stated earlier, will be using [Akismet](http://akismet.com/).
 
 ### Akisment Intergation
-The gem used here is called [rakismet](https://github.com/joshfrench/rakismet). Rakisment gives a nice frontend to deal with the Akisment API. The best place for the logic for the spam check is in the comment model file. Rakismet checks attributes on the model. So some attributes need to be defined. However, first the raskismnt model class must be imported. 
+The gem used here is called [rakismet](https://github.com/joshfrench/rakismet). Rakismet gives a nice frontend to deal with the Akisment API. The best place for the logic for the spam check is in the comment model file. Rakismet checks attributes on the model. So some attributes need to be defined. However, first the raskismnt model class must be imported. 
 
 	class Comment < ActiveRecord::Base
 		include Rakismet::Model
 		...
 	end
 
-Next pass the raskimet attributes.
+Next add the attributes that will rakismet will submit to Akismet.
 
 	...
 
 	 rakismet_attrs
 	 	author: proc { user.name }
-	 	author_meail: proc { user.email }
+	 	author_email: proc { user.email }
+	 	author_url: proc { user.url }
+	 	comment_type: "comment"
+	 	
 
 	...
 
