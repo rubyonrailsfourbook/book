@@ -3,6 +3,6 @@
 ### Mac OS
 
 ### Windows
-Ruby on Rails in Windows is
+Ruby on Rails in Windows is....
 
 ### Linux
