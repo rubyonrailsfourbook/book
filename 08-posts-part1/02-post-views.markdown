@@ -30,9 +30,9 @@
 	           <td>
 	             <% if @current_user.admin? %>
 	               <%= link_to "Edit", edit_post_url(post) , 
-	               							class: 'btn btn-info' %>
+	               		class: 'btn btn-info' %>
 	               <%= link_to "Destory", post, 
-	               							method: :delete, 
+	               		method: :delete, 
 	               class: 'btn btn-danger' %>
 	             <% end %>
 		     </td>

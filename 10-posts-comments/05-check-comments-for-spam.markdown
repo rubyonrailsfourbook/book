@@ -16,7 +16,7 @@ The downsides of using spam filers that some spam could be marked "ham". Ham is 
 These method require the user the to do more work than they "need" to in order to post their comment. These methods can very in range in time required to finish the "puzzle" and complexity. There is an act of balance that must be played when using these types of spam prevention.
 
 ##### (Re)captcha
-This method involves using and  distorting text and having the using decode it. The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition, software can't read so. Captchas normally error on the side of preventing spam which make them harder to solve. This will cause problems with usability. The good part of this method is that 
+This method involves using and  distorting text and having the using decode it. The key is make simple enough to make sure that your grandma can do it with bad eye sight and make hard enough so that OCR, optical character recognition, software can't read so. Captchas normally error on the side of preventing spam which make them harder to solve. This will cause problems with usability. The good part of this method is that stop a lot of spam. Over they can be overly hard to slove. 
 
 D> ## Captchas are Debatable
 D>
@@ -32,6 +32,10 @@ This method requires the user to answer a "simple" question to submit the commen
 * What is 2 times 2?
 * What planet do you live on?
 * What color is grass?
+
+D> ## Sample Questions are a Compromise
+D> 
+D> The slove the issue of sloving hard puzzle and stopping spam.
 
 This method sounds great since it doesn't require people to waste several attempts to guess extremely distorted as discussed above. How ever there are some draw backs to this approach. The first issue is that it can broken be broken by hackers. This can be done by creating a table of questions and answers. Having this a hacking can just render useless for spam prevention.
 
