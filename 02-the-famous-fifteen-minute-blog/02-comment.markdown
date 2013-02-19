@@ -2,12 +2,12 @@
 
 ## Model
 
-| Field       | Type       |
-|-------------|-------|
-| name        | string    |
-| content     | text        |
-| user_id     | integer     |
-| post_id     | integer     |
+| Field       | Type    |
+|-------------|---------|
+| name        | string  |
+| content     | text    |
+| user_id     | integer |
+| post_id     | integer |
 	
 ## Forms
 The form for comments will be on each blog post. The show action.

@@ -15,26 +15,30 @@
 	
 ### Post Listing Page
 	<table>
-		<thead>
-			<tr>
-				<th>Title</th>
-				<th>Published at</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% post.each do |post| %>
-			<tr>
-				<td><%= post.title %></td>
-				<td><%= post.published_at.stamp(date_format)</td>
-				<td>
-					<% if @current_user.admin? %>
-						<%= link_to "Edit", edit_post_url(post) , class: 'btn btn-info' %>
-						<%= link_to "Destory", post, method: :delete, class: 'btn btn-danger' %>
-					<% end %>
-				</td>
-			</tr>
-			<% end %>
-		</tbody>
+	   <thead>
+	     <tr>
+	       <th>Title</th>
+	        <th>Published at</th>
+	         <h4><%= post.published_at.stamp(date_format)</h4>
+	     </tr>
+	   </thead>
+	   <tbody>
+	      <% post.each do |post| %>
+	        <tr>
+	           <td><%= post.title %></td>
+	           <td><%= post.published_at %></td>
+	           <td>
+	             <% if @current_user.admin? %>
+	               <%= link_to "Edit", edit_post_url(post) , 
+	               							class: 'btn btn-info' %>
+	               <%= link_to "Destory", post, 
+	               							method: :delete, 
+	               class: 'btn btn-danger' %>
+	             <% end %>
+		     </td>
+                   </tr>
+	  <% end %>
+     </tbody>
 	</table>
 		
 
