@@ -9,3 +9,4 @@
 | admin 			| boolean  |
 
 ## Overview
+The user model
