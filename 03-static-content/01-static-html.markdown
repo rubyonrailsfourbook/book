@@ -3,7 +3,7 @@
 ## Starting Our Blog
 In this chapter we will start creating the main blog. So first we need to create the rails app.
 
-	$ rails new blog --skip-test-unit
+	$ rails new blog --skip-test-unit --database postgresql
 	$ cd blog
 
 Next we need to edit the Gemfile to make it work for our needs. Please go to
@@ -22,7 +22,7 @@ After creating the application next we are going to create a git repoository and
 
 	$ git init
 	$ git add .
-	$ git commit -m "First Commit"	
+	$ git commit -m "First Commit"
 
 ## Static Content
 Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.
@@ -39,17 +39,17 @@ These pages are static. The are not changed in any way by rails. Pages like this
 		<body>
 			<h1>This is a truly static page</h1>
 		</body>
-	</html> 
-	
-### Issues	
+	</html>
+
+### Issues
 This is a very simple HTML page and simple todo. However this is not a good solution. There are a few issues with this approach.
 
 #### The Layout
-The layout of the site, which we will talk out in the next chapter, will not be appiled to these types of pages. They must be given there own style. This can be great. 
+The layout of the site, which we will talk out in the next chapter, will not be appiled to these types of pages. They must be given there own style. This can be great.
 But, if the goal of these pages is contact and about this might not be the best approach.
 
 #### The Location
 Since the advent of the asset pipeline, talked about later in this book, putting files in `public` is sort seems a bit wrong. This a public for error pages and that is about it. That is the attuide given the rails community.
 
 ## Mostly Static
-The next way is a bit better. This way allows you to keep the same layout of your site very easily. 
+The next way is a bit better. This way allows you to keep the same layout of your site very easily.
