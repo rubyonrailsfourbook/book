@@ -9,9 +9,9 @@
 | admin 			| boolean  |
 
 ## Overview
-The user model
+The user model.
 
-### Work
+### Make the Model
 Before we start any major changes we should switch to a topic branch as explained in the git section of this book.
 
 	$ git checkout -b add_users
@@ -25,9 +25,8 @@ This will create a model at `app/models/user.rb` and a migration for the user at
 Next we need to run the migration to create the database table.
 
 	$ rake db:migrate
-Then open user model in `app/models/users`. Inside you will find a empty class. This is a good starting place.
+Then open user model in `app/models/users`. Inside you will find a empty class. This is a good starting place. The next step is to add vaildations.
 
-### Commit Your Work
-T> ## Commit early and often!
+T> ## Commit early and commit often!
 T>
-T>	$ git commit -m "Generated user model and migrations."
+T>	$ git commit -m "Generated user model and migrations were ran."

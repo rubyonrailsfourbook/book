@@ -53,3 +53,5 @@ Since the advent of the asset pipeline, talked about later in this book, putting
 
 ## Mostly Static
 The next way is a bit better. This way allows you to keep the same layout of your site very easily.
+
+## REST(ful)

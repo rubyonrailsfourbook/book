@@ -8,7 +8,7 @@ This code checks for email address issues. This requires the `validates_as_email
 
 	validates_as_email_address :email
 
-### Commit
-T> ## Commit early and often!
+
+T> ## Commit early and commit often!
 T>
 T> 	$ git commit -m "Added user vaildtions."
