@@ -9,3 +9,8 @@
 
 
 ## Post Model
+
+### Vaildtions
+
+### Associtions
+The post belongs to a user.

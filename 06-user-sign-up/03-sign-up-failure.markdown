@@ -1,1 +1,2 @@
-## Sign Up Failire
+## Sign Up Failure
+

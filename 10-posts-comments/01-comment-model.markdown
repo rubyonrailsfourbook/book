@@ -11,3 +11,7 @@
 
 ## Comment Model
 
+### Validations
+
+### Associations
+
