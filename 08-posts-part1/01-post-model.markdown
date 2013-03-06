@@ -10,7 +10,7 @@
 
 ## Post Model
 
-### Vaildtions
+### Vaildations
 
 ### Associtions
 The post belongs to a user.

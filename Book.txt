@@ -29,3 +29,5 @@
 10-posts-comments/01-comment-model.markdown
 10-posts-comments/02-comment-replies.markdown
 10-posts-comments/03-check-comments-for-spam.markdown
+11-post-tags/01-tag-model.markdown
+11-post-tags/02-tagging-model.markdown

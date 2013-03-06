@@ -25,6 +25,7 @@ This will create a model at `app/models/user.rb` and a migration for the user at
 Next we need to run the migration to create the database table.
 
 	$ rake db:migrate
+	
 Then open user model in `app/models/users`. Inside you will find a empty class. This is a good starting place. The next step is to add vaildations.
 
 T> ## Commit early and commit often!

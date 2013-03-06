@@ -1,36 +1,5 @@
 # Creating the Layout
+This section will cover how to make the blog look nice. The Ruby on Rails Four Book is not a book on web design. However this book will still do a minor look into CSS. Besides, it doesn't hurt have a nice looking appliction when working on it. 
 
 ## Structure
-	<html>
-		<head>
-			<title>The Sample Blog</title>
-			<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  			<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  			<%= csrf_meta_tags %>
-		</head>
-		<body>
-		    <div class="navbar navbar-inverse navbar-fixed-top">
-		      <div class="navbar-inner">
-		        <div class="container">
-		          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		          </button>
-		          <a class="brand" href="#">Project name</a>
-		          <div class="nav-collapse collapse">
-		            <ul class="nav">
-		              <li class="active"><a href="#">Home</a></li>
-		              <li><a href="#about">About</a></li>
-		              <li><a href="#contact">Contact</a></li>
-		            </ul>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
-
-		    <div class="container">
-				<%= yield %>
-		    </div>
-		</body>
-	</html>
+It's important when working with a web application to have an outline of your final product. In order to do this book will use a mockup. A mockup is drawing of what the web page will look like. Below is the mockup for the homepage for the blog.

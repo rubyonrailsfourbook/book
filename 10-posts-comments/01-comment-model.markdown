@@ -13,5 +13,12 @@
 
 ### Validations
 
+	validates_presence_of :content
+
 ### Associations
+
+	belongs_to :post
+
+	belongs_to :user
+
 

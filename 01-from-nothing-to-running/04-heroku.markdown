@@ -12,4 +12,4 @@ You can't write to the disk of your box that hosts your site. If you want upload
 Tons of addons to many needs. This includes MySQL, New Relic, SSL, and lots more.
 
 #### Scales Very Well 
-A part of creating a web app is scaling. Heroku makes scaling is very easy. All one has to do move a slider up to increase capacity when needed. Then when the amount of requests are lower
+A part of creating a web app is scaling. Heroku makes scaling is very easy. All one has to do move a slider up to increase capacity when needed. Then when the amount of requests are lower the slider can brought back down.
