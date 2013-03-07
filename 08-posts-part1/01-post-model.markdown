@@ -12,5 +12,9 @@
 
 ### Vaildations
 
-### Associtions
+	validates_presence_of :name, content
+
+### Associations
 The post belongs to a user.
+
+	belongs_to :user

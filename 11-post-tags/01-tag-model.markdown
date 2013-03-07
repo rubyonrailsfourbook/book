@@ -3,9 +3,10 @@
 | Name        | Field    |
 |-------------|----------|
 | name        | string   |
-| post_count  | integer  |
 
 ## Tag Model
+	
+
 
 ### Validations
 

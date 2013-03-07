@@ -1,2 +1,10 @@
 ## Comment Replies
-[Ancestry](https://github.com/stefankroes/ancestry) will do the heavy lifting for the comment the replies.
+The [Ancestry](https://github.com/stefankroes/ancestry) gem will do the heavy lifting for the comment the replies.
+
+### Ancestry
+
+### Comment Model
+
+	has_ancestry
+
+### Comment Views
