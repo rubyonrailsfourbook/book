@@ -18,3 +18,4 @@
 			<%= post.content %>
 		</div>
 	end
+	
