@@ -19,3 +19,4 @@ The story has been deployed to staging. Once the stakeholder looks over the stor
 The Process of deploy often. Normally serval times a day.
 
 ### Test Driven Devlopment
+Red -> Green -> Red -> Green
