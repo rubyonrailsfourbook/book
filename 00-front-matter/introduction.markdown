@@ -9,3 +9,5 @@ Welcome to the Ruby on Rails Four Book.
 
 ### Prerequisites
 * A Basic Understanding of the Ruby Language
+
+The code for the applictions made in this 
