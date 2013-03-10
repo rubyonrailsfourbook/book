@@ -3,6 +3,6 @@
 ### Mac OS
 
 ### Windows
-Ruby on Rails in Windows is....
+[RailsInstaller](http://railsinstaller.org/)
 
 ### Linux

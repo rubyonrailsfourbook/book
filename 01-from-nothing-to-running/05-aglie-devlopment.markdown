@@ -20,3 +20,6 @@ The Process of deploy often. Normally serval times a day.
 
 ### Test Driven Devlopment
 Red -> Green -> Red -> Green
+
+### Continuous Intergation
+A server to run your tests

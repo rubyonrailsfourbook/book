@@ -3,7 +3,7 @@
 ### Sign In
 
 #### Controller
-
+	{lang="ruby"}
 	def new
 	end
 
@@ -12,5 +12,9 @@
 	end
 
 #### Views
+	{lang="erb"}
+
+	<%= form_tag %>
+	<% end %>
 
 ### Sign Out
