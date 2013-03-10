@@ -3,7 +3,7 @@
 01-from-nothing-to-running/02-devlopment-setup.markdown
 01-from-nothing-to-running/03-your-devlopment-environment.markdown
 01-from-nothing-to-running/04-git.markdown
-01-from-nothing-to-running/05-heroku.markdown
+01-from-nothing-to-running/05-deployment.markdown
 01-from-nothing-to-running/06-aglie-devlopment.markdown
 02-the-famous-fifteen-minute-blog/01-posts.markdown
 02-the-famous-fifteen-minute-blog/02-comment.markdown
