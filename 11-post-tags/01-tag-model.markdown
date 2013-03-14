@@ -5,8 +5,6 @@
 | name        | string   |
 
 ## Tag Model
-	
-
 
 ### Validations
 
