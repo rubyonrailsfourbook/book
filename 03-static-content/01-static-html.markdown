@@ -55,3 +55,6 @@ Since the advent of the asset pipeline, talked about later in this book, putting
 The next way is a bit better. This way allows you to keep the same layout of your site very easily.
 
 ## REST(ful)
+When people first learn about REST they want to do **EVERY** thing RESTfuly.
+
+There is a reason for **NOT** doing this.

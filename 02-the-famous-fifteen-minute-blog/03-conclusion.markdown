@@ -6,3 +6,5 @@ The way this blog is setup any user could create post just by knowing url to. Th
 
 ### Delayed Publishing
 Doesn't exist in this application.
+
+### No Orangizion
