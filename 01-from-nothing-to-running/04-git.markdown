@@ -22,4 +22,4 @@ This command merges two branchs. It's merges the given branch to the current bra
 	git push origin master
 
 ### GitHub
-[Github](https://github.com) is service to host  
+[Github](https://github.com) is service to host source code.  
