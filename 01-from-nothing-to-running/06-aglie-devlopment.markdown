@@ -16,10 +16,10 @@ This is even the devlopment on the story is done. The story is awaiting deploy t
 The story has been deployed to staging. Once the stakeholder looks over the story the stackholder will either Accept the story and story will then be pushed to production.
 
 ### Continuous Deployment
-The Process of deploy often. Normally serval times a day.
+The Process of deploy often. Normally several times a day.
 
 ### Test Driven Devlopment
 Red -> Green -> Red -> Green
 
 ### Continuous Intergation
-A server to run your tests
+A server to run your tests. This book will use [Travis CI](https://travis-ci.org) for Continuous Intergation testing since this project is open source. However there a several for closed source projects as well.

@@ -1,5 +1,5 @@
 ## Tagging Model
-This model will å
+This model will used for each tag on each post.
 
 | Name        | Field    |
 |-------------|----------|

@@ -12,10 +12,10 @@
 ### Views
 
 #### Blog View
-	@post.each do |posts|
-		<div class="signal_blog_post">
+	<% @post.each do |posts| %>
+		<div class="single_blog_post">
 			<h3><%= post.title %></h3>
 			<%= post.content %>
 		</div>
-	end
+	<% end %>
 	

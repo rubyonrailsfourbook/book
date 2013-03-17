@@ -30,6 +30,7 @@
 09-posts-part2/01-post-restrictions.markdown
 09-posts-part2/02-post-scheduling.markdown
 09-posts-part2/03-post-formatting.markdown
+09-posts-part2/04-posts-search.markdown
 10-posts-comments/01-comment-model.markdown
 10-posts-comments/02-comment-replies.markdown
 10-posts-comments/03-check-comments-for-spam.markdown

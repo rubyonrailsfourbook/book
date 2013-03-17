@@ -11,7 +11,7 @@
 ## Overview
 The user model.
 
-### Make the Model
+### Creating the Model
 Before we start any major changes we should switch to a topic branch as explained in the git section of this book.
 
 	$ git checkout -b add_users
