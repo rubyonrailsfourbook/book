@@ -11,6 +11,10 @@
 ## Overview
 The user model.
 
+## Stories Covered
+* As a user I want my password encrypted before being saved into the database
+* As a user I want validations so that I do not forget any important information when creating my account
+
 ### Creating the Model
 Before we start any major changes we should switch to a topic branch as explained in the git section of this book.
 

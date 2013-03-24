@@ -1,5 +1,10 @@
 # Post Tags
 
+## Stories Covered
+* As an admin user I want to create tags with posts
+* As I use I want to see a tag cloud to which tags are used
+* As a user I want to able to click on tag and see the posts that are tagged the same way
+
 | Name        | Field    |
 |-------------|----------|
 | name        | string   |

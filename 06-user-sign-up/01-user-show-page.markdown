@@ -1,4 +1,9 @@
 # User Sign Up
+
+## Stories Covered
+* As a User I want to able to Sign Up for the site
+
+
 In order to for our readers to comment on posts you need to sign up. This chapter will work on this task. Whenever making large changes or large additions it is a good idea to create a topic branch.
 
 	$ git checkout -b users_views
