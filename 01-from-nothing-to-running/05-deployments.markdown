@@ -2,7 +2,7 @@
 
 ### Limitions
 
-You can't write to the disk of your box that hosts your site. If you want uploads you need something like [Amzaon S3](http://aws.amazon.com/s3/).
+You can't write to the disk of server that hosts your site. If you want uploads you need something like [Amzaon S3](http://aws.amazon.com/s3/). In this application this will not be issues since we will useing uploads. If we want images we will use an exteral host.
 
 
 ### Strengths

@@ -5,9 +5,9 @@ Cover Art: http://www.flickr.com/photos/floridamemory/5665481186/sizes/o/in/phot
 ## Introduction 
 
 ### Welcome
-Welcome to the Ruby on Rails Four Book.
+Welcome to the Ruby on Rails Four Book. This book is created for a basic 
 
 ### Prerequisites
-* A Basic Understanding of the Ruby Language
+* Completed [TryRuby.org](http://tryruby.org)
 
 The code for the applictions made in this 

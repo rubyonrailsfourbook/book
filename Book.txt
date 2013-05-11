@@ -31,8 +31,10 @@
 09-posts-part2/02-post-scheduling.markdown
 09-posts-part2/03-post-formatting.markdown
 09-posts-part2/04-posts-search.markdown
-10-posts-comments/01-comment-model.markdown
-10-posts-comments/02-comment-replies.markdown
-10-posts-comments/03-check-comments-for-spam.markdown
-11-post-tags/01-tag-model.markdown
-11-post-tags/02-tagging-model.markdown
+10-posts-comments-part-1/01-comment-model.markdown
+10-posts-comments-part-1/02-comment-replies.markdown
+10-posts-comments-part-1/03-check-comments-for-spam.markdown
+11-posts-comments-part-2/01-comment-styling.markdown
+11-posts-comments-part-2/02-comment-form.markdown
+12-post-tags/01-tag-model.markdown
+12-post-tags/02-tagging-model.markdown

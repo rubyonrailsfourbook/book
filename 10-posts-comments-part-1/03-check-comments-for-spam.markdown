@@ -42,7 +42,7 @@ This method sounds great since it doesn't require people to waste several attemp
 This tutorial, as stated earlier, will be using [Akismet](http://akismet.com/).
 
 ### Akisment Intergation
-The gem used here is called [rakismet](https://github.com/joshfrench/rakismet). Rakismet gives a nice frontend to deal with the Akisment API. The best place for the logic for the spam check is in the comment model file. Rakismet checks attributes on the model. So some attributes need to be defined. However, first the raskismnt model class must be imported. 
+The gem used here is called [rakismet](https://github.com/joshfrench/rakismet). Rakismet gives a nice frontend to deal with the Akisment API. The best place for the logic for the spam check is in the comment model file. Rakismet checks attributes on the model. So some attributes need to be defined. However, first the raskismnt model class must be imported. This is similar to the call used in the comment reply section about including the ancestry gem.
 
 	class Comment < ActiveRecord::Base
 		include Rakismet::Model
@@ -58,8 +58,7 @@ Next add the attributes that will rakismet will submit to Akismet.
 	 	author_email: proc { user.email }
 	 	author_url: proc { user.url }
 	 	comment_type: "comment"
-	 	
-
 	...
 
+In the above code sample the `proc` method is used. The `proc` method does.
 
