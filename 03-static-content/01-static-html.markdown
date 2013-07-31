@@ -10,7 +10,7 @@ Next we need to edit the Gemfile to make it work for our needs. Please go to
 
 TODO: Add Link To Gemfile
 
-next bundle your gems by running:
+Next bundle your gems by running:
 
 	$ bundle install
 
@@ -29,7 +29,6 @@ Every site needs static content. Static content is place where such information 
 
 ## Complete Static Pages
 
-### How to Create Complete Static Pages
 These pages are static. The are not changed in any way by rails. Pages like this can be place in `public` folder. For example you can place this code in a file in the `public` in file called `sample_page.html`.
 
 	<html>
@@ -42,7 +41,7 @@ These pages are static. The are not changed in any way by rails. Pages like this
 	</html>
 
 ### Issues
-This is a very simple HTML page and simple todo. However this is not a good solution. There are a few issues with this approach.
+This is a very simple HTML page and simple to create. However this is not a good solution. There are a few issues with this approach. The first issue is that layout and navigation, if any, must be updated
 
 #### The Layout
 The layout of the site, which we will talk out in the next chapter, will not be appiled to these types of pages. They must be given there own style. This can be great.

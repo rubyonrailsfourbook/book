@@ -1,27 +1,1 @@
-## Version Control and Git
-
-### Git Commands
-
-#### Braching
-Creating a branch is important part of the workflow. It create a seprate branch. It's used often during this book.
-
-	git checkout -b [new_branch_name]
-	git branch [new_branch_new]
-
-#### Merge
-This command merges two branchs. It's merges the given branch to the current branch.
-
-	git merge [branch]
-
-#### Pushing 
-
-	git push [remote] [branch]
-	git push origin master
-	
-#### Pulling
-
-	git push [source] [branch]
-	git push origin master
-
-### GitHub
-[Github](https://github.com) is service to host source code. It also provides serval other features for your projec. 
+## Version Control and GitThought-out this book the command `git` will be used. Git is a distributive  version control system. This mean the each developer has a copy of the repository, repo, on his or her computer. ### Git Commands#### BranchingCreating a branch is important part of the workflow. It create a separate branch. It's used often during this book.	git checkout -b [new_branch_name]	git branch [new_branch_new]#### MergeThis command merges two branches. It's merges the given branch to the current branch.	git merge [branch]#### Pushing 	git push [remote] [branch]	git push origin master	#### Pulling	git push [source] [branch]	git push origin master### GitHub[Github](https://github.com) is service to host source code. It also provides many other features for your projects. Including Wiki, Issue Tracking, and pull requests. These features will help you keep track of your projects.
