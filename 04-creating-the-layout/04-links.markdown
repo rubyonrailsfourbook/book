@@ -1,3 +1,1 @@
-## Links
-	
-	<%= link_to "Home", root_url %>
+## Links		<%= link_to "Home", root_url %>

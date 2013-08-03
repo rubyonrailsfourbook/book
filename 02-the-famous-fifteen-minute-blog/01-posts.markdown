@@ -1,24 +1,1 @@
-# The Famous Fifteen Minute Blog
-The fifteen minute blog was screencast by [David Heinemeier Hansson](http://david.heinemeierhansson.com/), [DHH](https://github.com/dhh), it has made back at the inception of the Ruby on Rails Project. Using Rails a very early version of Rails, before version 1.0. It can be viewed [on the Ruby on Rails Website](http://weblog.rubyonrails.org/2008/11/27/new-15-minute-blog-video-on-rails-2-2/). It is one of the halmark's of the Ruby on Rails Community. The basic idea of the fifteen blog is show how easy Ruby on Rails web devlopmemt can be.
-
-There is one issue with the fifteen minute blog. It was made in fifteen minutes. It has many issues with security and lack of basic features such as comment moderation. This issues will addressed in reset of this book. Here   
-
-## Posts
-
-### Model
-
-| Field    | Type       |
-|----------|------------|
-| title    | string     |
-| content  | text       |
-
-### Views
-
-#### Blog View
-	<% @post.each do |posts| %>
-		<div class="single_blog_post">
-			<h3><%= post.title %></h3>
-			<%= post.content %>
-		</div>
-	<% end %>
-	
+# The Famous Fifteen Minute BlogThe fifteen minute blog was screencast by [David Heinemeier Hansson](http://david.heinemeierhansson.com/), [DHH](https://github.com/dhh), it has made back at the inception of the Ruby on Rails Project. Using Rails a very early version of Rails, before version 1.0. It can be viewed [on the Ruby on Rails Website](http://weblog.rubyonrails.org/2008/11/27/new-15-minute-blog-video-on-rails-2-2/). It is one of the hallmark's of the Ruby on Rails Community. The basic idea of the fifteen blog is show how easy Ruby on Rails web development can be.There is one issue with the fifteen minute blog. It was made in fifteen minutes. It has many issues with security and lack of basic features such as comment moderation. This issues will addressed in reset of this book. Here   ## PostsPosts contain the main content. They are displayed on the front page### Model| Field    | Type       ||----------|------------|| title    | string     || content  | text       |	$ rails g scaffold post title:string content:textYou can also run this command a bit differently 	$ rails g scaffold title content:stringNotice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name then you want a string column. It's a nice trick to save a few keystrokes. ### Views#### Blog View / Homepage	<% @posts.each do |post| %>		<div class="single_blog_post">			<h3><%= link_to post.title, post %></h3>			<%= post.content %>		</div>	<% end %>	Then in `config/routes.rb`	root to: 'post#index'
