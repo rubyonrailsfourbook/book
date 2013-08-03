@@ -1,1 +1,1 @@
-Exerise:Add a admin backend using RailsAdminAdd a tag cloud
+Exercises:## Add a admin backend using RailsAdmin## Add a tag cloud
