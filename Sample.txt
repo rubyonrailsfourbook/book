@@ -5,9 +5,9 @@
 01-from-nothing-to-running/04-git.markdown
 01-from-nothing-to-running/05-deployments.markdown
 01-from-nothing-to-running/06-aglie-devlopment.markdown
-02-the-famous-fifteen-minute-blog/01-posts.markdown
-02-the-famous-fifteen-minute-blog/02-comment.markdown
-02-the-famous-fifteen-minute-blog/03-conclusion.markdown
+02-the-famous-fifteen-minute-blog/01-posts.md
+02-the-famous-fifteen-minute-blog/02-comment.md
+02-the-famous-fifteen-minute-blog/03-conclusion.md
 03-static-content/01-static-html.markdown
 03-static-content/02-writing-tests.markdown
 04-creating-the-layout/01-structure.markdown
