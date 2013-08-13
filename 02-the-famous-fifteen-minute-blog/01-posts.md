@@ -7,6 +7,15 @@ There is one issue with the fifteen minute blog. It was made in fifteen minutes.
 I recommend creating a director to store all of your Rails projects in. This will help keep you organized by having all of your work in one place. I store my Rails projects in folder called `rails_projects` and is in my home folder.
 
     $ mkdir ~/rails_projects 
+    $ cd ~/rails_projects
+
+Next we need to create the blog app. This command creates the project and installs all of the included gems.
+
+    $ rails new sample_rails_four_app
+
+Then change into the project.
+
+    $ cd sample_rails_four_app
 
 ## Posts resource
 In this section we will cover the creation of the posts model. We will also create web user interface to use with the model. This action of combation will create the `PostController`. The controller sits between the view and the model. The controller passes infomation from the model to view for rendering.
@@ -32,10 +41,15 @@ You can also run this command a bit differently as shown below.
 
 Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifing a type then you want a string column. It's a nice trick to save a few keystrokes. 
 
+Then you need to migrate the database. This will create the posts table in the database.
+
+        $ rake db:migrate
+
 ### Views
 Views are the presentation layer of the application. The html is sent to the users browsers'. The views are stored in `app/views`. 
 
 #### Blog View / Homepage
+
 	<% @posts.each do |post| %>
 		<div class="single_blog_post">
 			<h3><%= link_to post.title, post %></h3>
@@ -71,9 +85,6 @@ Rails uses a covention call REST.
 | posts/  		| create  | post      | Create Post 				|
 | /update       | update  | update    | Update Post                 |
 | /posts/1      | destroy | delete    | Delete Given Post           |  
-
-
-
 
 
 

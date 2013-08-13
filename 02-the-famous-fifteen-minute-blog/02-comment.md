@@ -10,7 +10,7 @@ In this section we the setup the comments. The comments will have a form on the 
 
 	$ rails g scaffold comment content:text post:belongs_to
 
-The `post:belongs_to` does a few things. First it creates the `post_id`  field and secondly it creates `belongs_to :post` in the `app/models/comment.rb`.
+The `post:belongs_to` does a few things. First it creates the `post_id`  field in the database and secondly it addes `belongs_to :post` in the `app/models/comment.rb`.
 	
 ### Forms
 The form for comments will be on each blog post. The show action.
