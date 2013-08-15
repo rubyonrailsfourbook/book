@@ -11,83 +11,6 @@ I recommend creating a folder to store all of your Rails projects in. This will 
 Next we need to create the blog app. The `rails new` command can help us that at. It creates the project and installs all of the included gems. After it's done change directories into the project. The way to use the `rails new` comamnd is to type `rails new` followed by the name / folder where the rails app will be created. It is important to point out that spaces should not be used in the project name. If you use spaces in the project name it will make your life miserable. Serval commands and funcations of many tools will not work. 
 
     $ rails new sample_rails_four_app
-          create
-          create  README.rdoc
-          create  Rakefile
-          create  config.ru
-          create  .gitignore
-          create  Gemfile
-          create  app
-          create  app/assets/javascripts/application.js
-          create  app/assets/stylesheets/application.css
-          create  app/controllers/application_controller.rb
-          create  app/helpers/application_helper.rb
-          create  app/views/layouts/application.html.erb
-          create  app/assets/images/.keep
-          create  app/mailers/.keep
-          create  app/models/.keep
-          create  app/controllers/concerns/.keep
-          create  app/models/concerns/.keep
-          create  bin
-          create  bin/bundle
-          create  bin/rails
-          create  bin/rake
-          create  config
-          create  config/routes.rb
-          create  config/application.rb
-          create  config/environment.rb
-          create  config/environments
-          create  config/environments/development.rb
-          create  config/environments/production.rb
-          create  config/environments/test.rb
-          create  config/initializers
-          create  config/initializers/backtrace_silencers.rb
-          create  config/initializers/filter_parameter_logging.rb
-          create  config/initializers/inflections.rb
-          create  config/initializers/mime_types.rb
-          create  config/initializers/secret_token.rb
-          create  config/initializers/session_store.rb
-          create  config/initializers/wrap_parameters.rb
-          create  config/locales
-          create  config/locales/en.yml
-          create  config/boot.rb
-          create  config/database.yml
-          create  db
-          create  db/seeds.rb
-          create  lib
-          create  lib/tasks
-          create  lib/tasks/.keep
-          create  lib/assets
-          create  lib/assets/.keep
-          create  log
-          create  log/.keep
-          create  public
-          create  public/404.html
-          create  public/422.html
-          create  public/500.html
-          create  public/favicon.ico
-          create  public/robots.txt
-          create  test/fixtures
-          create  test/fixtures/.keep
-          create  test/controllers
-          create  test/controllers/.keep
-          create  test/mailers
-          create  test/mailers/.keep
-          create  test/models
-          create  test/models/.keep
-          create  test/helpers
-          create  test/helpers/.keep
-          create  test/integration
-          create  test/integration/.keep
-          create  test/test_helper.rb
-          create  tmp/cache
-          create  tmp/cache/assets
-          create  vendor/assets/javascripts
-          create  vendor/assets/javascripts/.keep
-          create  vendor/assets/stylesheets
-          create  vendor/assets/stylesheets/.keep
-          run  bundle install
-
     $ cd sample_rails_four_app
 
 ## Posts resource
@@ -107,32 +30,38 @@ The fields on the model will be the following: The title, the title of the post,
 | content  | text       |
 
 
-    $ rails g scaffold post title:string content:text
+    $ rails generate scaffold post title:string content:text
 
 You can also run this command a bit differently as shown below.
 
     $ rails g scaffold title content:text
 
-Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. It's a nice trick to save a few keystrokes. 
+Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. Also `rails generate` can be shorted to `rails g`.  These are nice tricks to save a few keystrokes. 
 
 Next you need to migrate the database. This will create the posts table in the database. This command needs to be ran each time you create a migration. A migration is what changes the database. It can add tables, columns to tables, update column, and add indexes. 
 
     $ rake db:migrate
 
+### Viewing Pages Localy
+In order to view the blog localy you need a web server. Lucky, Ruby and Rails come with one. In order to start it just run `rails server` or if want to save some typing
+
 ### Views
 Views are the presentation layer of the application. The html is sent to the users; browsers. The views are stored in `app/views`. 
 
 #### Blog View / Homepage
-The default view made by the scaffold generator doesn't work to well with blog posts. 
+The default view made by the scaffold generator doesn't work to well with blog posts. As shown below. It doesn't look every good and doesn't look like a blog.
+![](images/chapter_2/post_index_default.png)
+
+In order to make the homepage look like a blog we need  to make it ourselves. The code below does that. The first line starts the loop. This loops throughe each post and oupts the title in heading thre and the content in a paragraph tag.
 
 	<% @posts.each do |post| %>
 		<div class="single_blog_post">
 			<h3><%= link_to post.title, post %></h3>
-			<%= post.content %>
+			<p><%= post.content %></p>
 		</div>
 	<% end %>
 	
-Next we will
+Next we will set 
 
 	root to: 'post#index'
 
@@ -161,7 +90,6 @@ Rails uses a convention call REST.
 | /posts/  		| create  | post      | Create Post 				|
 | /posts/update       | update  | update    | Update Post                 |
 | /posts/posts/1      | destroy | delete    | Delete Given Post           |  
-
 
 
 
