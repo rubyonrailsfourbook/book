@@ -1,5 +1,5 @@
 ## Comments Resource
-In this section we the setup the comments. The comments will have a form on the bottom of the show page on each post. The comments for each post will also be displayed at the bottom of the post. This will be different from the posts the model as their will not be any dedicated form pages. 
+In this section we the setup the comments. The comments will have a form on the bottom of the show page on each post. The comments for each post will also be displayed at the bottom of the post. This will be different from the posts the model as their will not be any dedicated form pages for comments. 
 	
 ### Model
 
@@ -13,7 +13,7 @@ In this section we the setup the comments. The comments will have a form on the 
 The `post:belongs_to` does a few things. First it creates the `post_id`  field in the database and secondly it addes `belongs_to :post` in the `app/models/comment.rb`.
 	
 ### Forms
-The form for comments will be on each blog post. The show action.
+The form for comments will be on the show action of the post controller. We are going to place before the list of comments. Reason for this is that user should have to scroll down in order to leave a comment.
 
 	<%= form_for(@comment) do |f| %>
 		<div class="field>
@@ -32,12 +32,13 @@ The form for comments will be on each blog post. The show action.
 	....
 
 ### Comment Model
+
 	class Comment < ActiveRecord::Base
 	  belongs_to :post
 	end
 
 ### Comment Controller
-The scaffold generator generates more than what we need for the comment controller. All the that is need is this.
+The scaffold generator generates more than what we need for the comment controller. All the that is need is this. The index, show, new, update, and destroy methods will not used in this app.
 
 	class CommentsController < ApplicationController
 		    # POST /comments
@@ -67,11 +68,8 @@ The scaffold generator generates more than what we need for the comment controll
 	      params.require(:comment).permit(:content, :post_id)
 	    end
 	end  
+	
+### Comment Routes
+Since we only using the create action on the comment controller we only need the create method on the routes for the commenents resource
 
-
-
-
-
-
-
-
+	resource :comments, only: [:create]
