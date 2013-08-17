@@ -26,12 +26,14 @@ The form for comments will be on the show action of the post controller. We are 
 	<% end %>
 
 ### Posts Model
+In the post model we add to an association to the post model to comments. The post model as a `has_many` association. This means that one post *has many* comments.
  	
-	...
-	has_many :comments
-	....
+	class Post < ActiveRecord::Base
+	    has_many :comments
+	end
 
 ### Comment Model
+Below is what the comment looks like. Second line, `belongs_to :post` which was added during the creation of comment model during the scaffold generation. This line states the comments `belongs_to`,  associated, one post. 
 
 	class Comment < ActiveRecord::Base
 	  belongs_to :post
@@ -70,6 +72,6 @@ The scaffold generator generates more than what we need for the comment controll
 	end  
 	
 ### Comment Routes
-Since we only using the create action on the comment controller we only need the create method on the routes for the commenents resource
+Since we only using the create action on the comment controller we only need the create method on the routes for the commenents resource.
 
 	resource :comments, only: [:create]

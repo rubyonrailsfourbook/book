@@ -50,6 +50,7 @@ Views are the presentation layer of the application. The html is sent to the use
 
 #### Blog View / Homepage
 The default view made by the scaffold generator doesn't work to well with blog posts. As shown below. It doesn't look every good and doesn't look like a blog.
+
 ![](images/chapter_2/post_index_default.png)
 
 In order to make the homepage look like a blog we need  to make it ourselves. The code below does that. The first line starts the loop. This loops throughe each post and oupts the title in heading thre and the content in a paragraph tag.
