@@ -5,6 +5,13 @@ In this chapter we will start creating the main blog. So first we need to create
 
 	$ rails new blog --skip-test-unit --database postgresql
 	$ cd blog
+T> # Kestroke Saver
+T>
+T> `--skip-test-unit` can be expressed as `-T`
+T> `--database` can expressed as `-d`
+T>
+T> So that command be expressed as
+T> rails new blog -T -d postgresql
 
 Next we need to edit the `Gemfile` to make it work for our needs. Please go to
 
@@ -27,9 +34,6 @@ After creating the application next we are going to create a git repoository and
 ## Static Content
 Every site needs static content. Static content is place where such information as contact and about is place. This should not be changed often. So it should be ok if place the content in the source code.
 
-First we need to create a controller and views. We will create some views and a controller for our static content
-
-    $ rails g controller static_content about contact
 
 ## Complete Static Pages
 
@@ -40,9 +44,15 @@ These pages are static. The are not changed in any way by rails. Pages like this
 			<title>Sample Page</title>
 		</head>
 		<body>
-			<h1>This is a truly static page</h1>
+			<h1T>his is a truly static page</h1>
 		</body>
 	</html>
+
+## Simi-static pages 
+First we need to create a controller and views. We will create some views and a controller for our static content
+
+    $ rails g controller static_content about contact
+
 
 ### Issues
 This is a very simple HTML page and simple to create. However this is not a good solution. There are a few issues with this approach. The first issue is that layout and navigation, if any, must be updated
@@ -60,4 +70,4 @@ The next way is a bit better. This way allows you to keep the same layout of you
 ## REST(ful)
 When people first learn about REST they want to do **EVERY** thing RESTfuly.
 
-There is a reason for **NOT** doing this.
+There are reason for **NOT** doing this. The first having RESTfull static views adds a lot of

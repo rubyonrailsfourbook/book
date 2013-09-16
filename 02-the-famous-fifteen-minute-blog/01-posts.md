@@ -32,11 +32,13 @@ The fields on the model will be the following: The title, the title of the post,
 
     $ rails generate scaffold post title:string content:text
 
-You can also run this command a bit differently as shown below.
-
-    $ rails g scaffold title content:text
-
-Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. Also `rails generate` can be shorted to `rails g`.  These are nice tricks to save a few keystrokes. 
+T># Keystroke Saver
+T>
+T> You can also run this command a bit differently as shown below.
+T>
+T>  $ rails g scaffold title content:text
+T>  
+T> Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. Also `rails generate` can be shorted to `rails g`.  These are nice tricks to save a few keystrokes. 
 
 Next you need to migrate the database. This will create the posts table in the database. This command needs to be ran each time you create a migration. A migration is what changes the database. It can add tables, columns to tables, update column, and add indexes. 
 
@@ -91,7 +93,6 @@ Rails uses a convention call REST.
 | /posts/  		| create  | post      | Create Post 				|
 | /posts/update       | update  | update    | Update Post                 |
 | /posts/posts/1      | destroy | delete    | Delete Given Post           |  
-
 
 
 
