@@ -5,6 +5,7 @@ In this chapter we will start creating the main blog. So first we need to create
 
 	$ rails new blog --skip-test-unit --database postgresql
 	$ cd blog
+
 T> # Kestroke Saver
 T>
 T> `--skip-test-unit` can be expressed as `-T`
@@ -58,8 +59,7 @@ First we need to create a controller and views. We will create some views and a 
 This is a very simple HTML page and simple to create. However this is not a good solution. There are a few issues with this approach. The first issue is that layout and navigation, if any, must be updated
 
 #### The Layout
-The layout of the site, which we will talk out in the next chapter, will not be applied to these types of pages. They must be given there own style. This can be great.
-But, if the goal of these pages is contact and about this might not be the best approach.
+The layout of the site, which we will talk out in the next chapter, will not be applied to these types of pages. They must be given there own style. This can major problem since you want your site to look the same everywhere.
 
 #### The Location
 Since the advent of the asset pipeline, talked about later in this book, putting files in `public` is sort seems a bit wrong. This a public for error pages and that is about it. That is the attitude given the rails community.
@@ -68,6 +68,4 @@ Since the advent of the asset pipeline, talked about later in this book, putting
 The next way is a bit better. This way allows you to keep the same layout of your site very easily.
 
 ## REST(ful)
-When people first learn about REST they want to do **EVERY** thing RESTfuly.
-
-There are reason for **NOT** doing this. The first having RESTfull static views adds a lot of
+When people first learn about REST they want to do everything RESTfuly. However, this isn't really necessary for static content. When you make static content RESTful you add a large amount of complexity.
