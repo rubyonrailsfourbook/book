@@ -45,7 +45,11 @@ Next you need to migrate the database. This will create the posts table in the d
     $ rake db:migrate
 
 ### Viewing Pages Localy
-In order to view the blog localy you need a web server. Lucky, Ruby and Rails come with one. In order to start it just run `rails server` or if want to save some typing
+In order to view the blog localy you need a web server. Lucky, Ruby and Rails come with one. In order to start it just run `rails server`.
+
+T> # Keystroke Saver
+T> You can run `rails server` with  `rails s`.
+
 
 ### Views
 Views are the presentation layer of the application. The html is sent to the users; browsers. The views are stored in `app/views`. 
@@ -91,7 +95,7 @@ Rails uses a convention call REST.
 | /posts/new     | new     | get       | Create new user             |
 | /posts/1/edit  | edit    | get       | Edit given user             |
 | /posts/  		| create  | post      | Create Post 				|
-| /posts/update       | update  | update    | Update Post                 |
+| /posts/1       | update  | put, patch    | Update Post                 |
 | /posts/posts/1      | destroy | delete    | Delete Given Post           |  
 
 
