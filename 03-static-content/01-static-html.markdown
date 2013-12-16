@@ -69,6 +69,6 @@ Since the advent of the asset pipeline, talked about later in this book, putting
 The next way is a bit better. This way allows you to keep the same layout of your site very easily.
 
 ## REST(ful)
-When people first learn about REST they want to do **EVERY** thing RESTfuly.
+When people first learn about REST they want to do **EVERY** thing RESTfuly. Yes, most of the blog will dymanic content. However, some parts will be static.
 
-There are reason for **NOT** doing this. The first having RESTfull static views adds a lot of
+There are reason for **NOT** doing this. The first having RESTful static views adds a lot of complexity to your site. It also creates large load on your database.
