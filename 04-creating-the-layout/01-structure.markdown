@@ -25,6 +25,31 @@ To start the layout make sure that your `Gemfile` is updated to the lastest here
 Next we need to add bootstrap to the our css file. You can do this by adding this line to your `app/assets/stylesheets/application.css.scss`. Please note that if you are having issues with `@import` then make sure that move the file to the `.scss` extension. 
 
 	@import 'twitter/bootstrap';
+
+Next we are going to create the HTML layout. Next open `app/views/layouts/application.html.erb`.
+	<html>
+		<head>
+			<title><%= page_title %></title>
+		</head>
+		<body>
+			<div class="container-narrow">
+				<div class="masthead">
+					<ul class="nav nav-pills pull-right">
+						<li>Home</li>
+						<li>About</li>
+					</ul>
+					<h3 class="muted">My Blog</h3>
+				</div>
+				<hr>
+				<div class="jumbotron">
+					INSERT SLIDESHOW
+				</div>
+			</div>
+		</body>
+	</html>
+
+
+
   
 
 
