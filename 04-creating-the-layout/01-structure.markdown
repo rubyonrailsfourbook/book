@@ -22,6 +22,9 @@ To start the layout make sure that your `Gemfile` is updated to the lastest here
 
 	$ git mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss
 
+T> # Commit Early, Commit Often
+T> `git commit -m "Move application.css to application.css.scss"`
+
 Next we need to add bootstrap to the our css file. You can do this by adding this line to your `app/assets/stylesheets/application.css.scss`. Please note that if you are having issues with `@import` then make sure that move the file to the `.scss` extension. 
 
 	@import 'twitter/bootstrap';

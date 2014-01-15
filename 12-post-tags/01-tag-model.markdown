@@ -12,7 +12,11 @@
 ## Tag Model
 This model is the tag. Only the name is the only field along with the `id` field created by rails. This model is the simpleist model in the blog being only three lines of code.
 
+### Test for Vaildations
+
+
 ### Validations
+
 In order to create the tag it should have a name
 
 	validates_presence_of :name
