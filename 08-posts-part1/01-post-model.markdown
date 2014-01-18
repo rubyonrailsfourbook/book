@@ -2,10 +2,10 @@
 
 | Field                   | Type       |
 |-------------------------|------------|
-| name 					  | string	   |
-| content 				  | text       |
-| published_on 			  | datetime   |
-| user_id				  | integer    |
+| name 					          | string	   |
+| content 				        | text       |
+| published_on 			      | datetime   |
+| user_id				          | integer    |
 
 ## Stories Covered
 * As a user I want to able view posts in blog layout
@@ -16,7 +16,7 @@
 ### Vaildations
 
 	validates_presence_of :name, content
-	
+
 	validates_length_of :content, minimum: 255
 
 ### Associations

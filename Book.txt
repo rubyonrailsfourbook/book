@@ -8,3 +8,7 @@
 02-the-famous-fifteen-minute-blog/01-posts.md
 02-the-famous-fifteen-minute-blog/02-comment.md
 02-the-famous-fifteen-minute-blog/03-conclusion.md
+05-user-model/01-user-model-overview.markdown
+05-user-model/02-user-model-validtions.markdown
+05-user-model/03-user-password.markdown
+05-user-model/04-user-restrictions.markdown

@@ -1,4 +1,4 @@
-# Post Part 2
+# Posts Part 2
 
 ## Stories Covered
 * As a user I should not be able to create posts

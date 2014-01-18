@@ -40,7 +40,7 @@ I have found that the that simplest solution for using PostgreSQL on Mac OS to u
 ### Windows
 On Mircosoft Windows the fine folks at [EngineYard](http://EngineYard.com) have made it easy. Just go to [the RailsInstaller website](http://railsinstaller.org/) and download the Windows Version, be sure and get the 1.9 version, and run the installer. The default settings you be fine.
 
-![](images/chapter_1/rails_installer_org_windows_1_9_button.png)
+![](images/chapter_1/rails_installer_org_windows.png)
 
 
 Please note that developing on Windows is not widely supported in the world Ruby and the like so the best might to might be to use a Virtual Machine, also called a VM, and install Linux on it and follow the Linux directions. In order to this you first need something like [Vagrant](http://www.vagrantup.com) which is free and open source. Then use a project like 

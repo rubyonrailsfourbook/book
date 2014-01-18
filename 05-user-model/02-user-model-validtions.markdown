@@ -1,6 +1,5 @@
 ## Validations
 In order the blog work right the blog centrin infomation and in the right format. Checking for this is called vaildtions.
-{lang=ruby}
 
 	validates_presence_of  :name, :email
 
