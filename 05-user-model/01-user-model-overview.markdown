@@ -37,6 +37,10 @@ T> ## Commit early and commit often!
 T>
 T>	$ git commit -m "Generated user model and migrations were ran."
 
+T> ## Rails Convention
+T>
+T> In there is content for pluralization of model name and controller names. Model names are to be singlar. Controller names are to be pluar. Follow this convention will make rails do its magic and cuase you less stress.
+
 ### Test Setup
 We will setup the tests for the user model. First we will create a user that will be used in the tests.
 
@@ -49,7 +53,7 @@ We will setup the tests for the user model. First we will create a user that wil
 
 Next we will set the `subject` of the test. Setting the subject of the test easier to test.
 
-    subject { @user }
+  subject { @user }
 
 Next we make sure that the test user is valid. It the test user is not valid it will make all of the other tests useless. In RSpec a test in wrapped in an `it` block. In this test we are using a one-liner `it` block. Inside the it block we are using the `should` method. Then we passed in the `be_valid` method. This test check if user object passes the validations defined in the validations.
 

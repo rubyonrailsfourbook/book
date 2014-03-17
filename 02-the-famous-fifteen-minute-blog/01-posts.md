@@ -37,10 +37,10 @@ T>
 T> You can also run this command a bit differently as shown below.
 T>
 T>  $ rails g scaffold title content:text
-T>  
-T> Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. Also `rails generate` can be shorted to `rails g`.  These are nice tricks to save a few keystrokes. 
+T>
+T> Notice that `title` doesn't have `:string` following it. You can do this since rails assumes that if just put a column name without specifying a type then you want a string column. Also `rails generate` can be shorted to `rails g`.  These are nice tricks to save a few keystrokes.
 
-Next you need to migrate the database. This will create the posts table in the database. This command needs to be ran each time you create a migration. A migration is what changes the database. It can add tables, columns to tables, update column, and add indexes. 
+Next you need to migrate the database. This will create the posts table in the database. This command needs to be ran each time you create a migration. A migration is what changes the database. It can add tables, columns to tables, update column, and add indexes.
 
     $ rake db:migrate
 
@@ -52,7 +52,7 @@ T> You can run `rails server` with  `rails s`.
 
 
 ### Views
-Views are the presentation layer of the application. The html is sent to the users; browsers. The views are stored in `app/views`. 
+Views are the presentation layer of the application. The html is sent to the users; browsers. The views are stored in `app/views`.
 
 #### Blog View / Homepage
 The default view made by the scaffold generator doesn't work to well with blog posts. As shown below. It doesn't look every good and doesn't look like a blog.
@@ -67,8 +67,8 @@ In order to make the homepage look like a blog we need  to make it ourselves. Th
 			<p><%= post.content %></p>
 		</div>
 	<% end %>
-	
-Next we will set 
+
+Next we will set
 
 	root to: 'post#index'
 
@@ -80,7 +80,7 @@ Rails uses a convention call REST.
 
 | URL 	   | Action | Description    		           |
 |----------|--------|--------------------------------|
-| /index   | index  | List all Posts 			       | 
+| /index   | index  | List all Posts 			       |
 | /show/1/ | show   | List the current post detail   |
 | /new     | new    | Create new user                |
 | /edit    | edit   | Edit given user                |
@@ -90,13 +90,13 @@ Rails uses a convention call REST.
 
 | URL 	   		| Action  | Verb      | Description    		 	    |
 |---------------|---------|-----------|-----------------------------|
-| /posts/index   | index   | get       | List all Posts 		 	    | 
+| /posts/index   | index   | get       | List all Posts 		 	    |
 | /posts/show/1/ | show    | get       | List the current /post detail|
 | /posts/new     | new     | get       | Create new user             |
 | /posts/1/edit  | edit    | get       | Edit given user             |
 | /posts/  		| create  | post      | Create Post 				|
 | /posts/1       | update  | put, patch    | Update Post                 |
-| /posts/posts/1      | destroy | delete    | Delete Given Post           |  
+| /posts/posts/1      | destroy | delete    | Delete Given Post           |
 
 
 

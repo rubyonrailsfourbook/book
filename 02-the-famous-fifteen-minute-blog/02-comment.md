@@ -11,7 +11,7 @@ In this section we the setup the comments. The comments will have a form on the 
 	$ rails g scaffold comment content:text post:belongs_to
 
 The `post:belongs_to` does a few things. First it creates the `post_id`  field in the database and secondly it addes `belongs_to :post` in the `app/models/comment.rb`.
-	
+
 ### Forms
 The form for comments will be on the show action of the post controller. We are going to place before the list of comments. Reason for this is that user should have to scroll down in order to leave a comment.
 
@@ -19,7 +19,7 @@ The form for comments will be on the show action of the post controller. We are 
 		<div class="field>
 		  <%= f.text_field :content %>
 		</div>
-		
+
            <div class="action">
              <%= f.submit %>
            </div>
@@ -27,7 +27,7 @@ The form for comments will be on the show action of the post controller. We are 
 
 ### Posts Model
 In the post model we add to an association to the post model to comments. The post model as a `has_many` association. This means that one post *has many* comments.
- 	
+
 	class Post < ActiveRecord::Base
 	    has_many :comments
 	end

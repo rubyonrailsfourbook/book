@@ -12,11 +12,15 @@ The first thing is to create the controllers. This will also create the views we
 
 	$ rails g controller users index show new edit
 
-This command will create a restful controller and blank views.
+This command will create a RESTful controller and blank views for the index, show, new, and edit action for the users controller.
 
-## User Show Page
-This a profile page for each user. There will two types. The first is for admins. The admin menu will posts and comments. While the non-admin profile will show only comments. Since these have not been created yet we will add these later.
+
 
 T> ## Commit early and commit often!
 T>
 T>  $ git commit -m "Added users controllers and views"
+
+## User Show Page
+This a profile page for each user. There will two types. The first is for admins. The admin menu will posts and comments. While the non-admin profile will show only comments. Since these have not been created yet we will add these later. Here is a mockup of what that user profile page will look file.
+
+![](images/chapter_5/profile.png)

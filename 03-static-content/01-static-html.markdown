@@ -49,7 +49,7 @@ These pages are static. The are not changed in any way by rails. Pages like this
 		</body>
 	</html>
 
-## Simi-static pages 
+## Simi-static pages
 First we need to create a controller and views. We will create some views and a controller for our static content
 
     $ rails g controller static_content about contact
@@ -69,6 +69,21 @@ Since the advent of the asset pipeline, talked about later in this book, putting
 The next way is a bit better. This way allows you to keep the same layout of your site very easily.
 
 ## REST(ful)
+REST is a pattern used in Rails for the controllers. There are seven actions in the RESTful controller. The following are actions on the REST controller.
+
+| Action Name | HTTP Method | URL              | Description                                |
+|-------------|-------------|------------------|--------------------------------------------|
+| index       |  GET        | /                | List all records                           |
+| show        |  GET        | /show/:id        | Show Details of a record                   |
+| new         |  GET        | /new             | Form for Creating a New Record             |
+| edit        |  GET        | /edit/:id        | Form for editing as exist record           |
+| create      |  POST       | /                | Create a new record with the posted params |
+| update      |  PATCH      | /                | Updates a given record                     |
+| delete      |  DELETE     | /:id             | Deletes a given record                     |
+
+
+
+
 When people first learn about REST they want to do **EVERY** thing RESTfuly. Yes, most of the blog will dymanic content. However, some parts will be static.
 
 There are reason for **NOT** doing this. The first having RESTful static views adds a lot of complexity to your site. It also creates large load on your database.
